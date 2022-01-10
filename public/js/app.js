@@ -10,7 +10,8 @@ const locationMsg = document.getElementById("p_location");
 weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     
-    weatherMsg.textContent = 'Loading Weather Information ...';
+    locationMsg.textContent = 'Loading Weather Information ...';
+    weatherMsg.textContent = '';
     const location = search.value;
 
     fetch('/weather?address=' + location).then((response) => {
