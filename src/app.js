@@ -50,6 +50,7 @@ app.get('/help/*', (req, res) => {
     });
 });
 
+// Fetch weather data according to geocode
 app.get('/weather', (req, res) => {
     if(!req.query.address)
     {
