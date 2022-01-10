@@ -16,7 +16,7 @@ const forecast = (lat, long, getWeatherCallback) => {
             else {
                 const callBackData = {
                     locationName: data.location.name,
-                    dataStr: `Is is currently ${data.current.temperature} degrees out but feels like ${data.current.feelslike} degrees out in ${data.location.name}, ${data.location.country}. Oh! by the way, the weather is seems like ${data.current.weather_descriptions[0]}.`
+                    dataStr: `Is is currently ${data.current.temperature} degrees out but feels like ${data.current.feelslike} degrees out in ${data.location.name}, ${data.location.country}. Oh! by the way, the weather seems like ${data.current.weather_descriptions[0]}.`
                 };
                 getWeatherCallback(callBackData);
             }
