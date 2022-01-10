@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+{{>assets}}
+
+<head>
+</head>
+
+<body>
+    <div class="maindiv">
+        <div class="main-content">
+            {{>header}}
+            {{>navigation}}
+
+            <div class="content-holder">
+            <p>Wanna know what is the weather?</p>
+
+            <form>
+                <input type="text" name="search" id="search" placeholder="Location">
+                <button>Submit</button>
+            </form>
+            <p id="p_location"></p>
+            <p id="p_msg"></p>
+            </div>
+        </div>
+        {{>footer}}
+    </div>
+</body>
+
+</html>
